@@ -1,5 +1,5 @@
 ElPresentePerfecto::Application.routes.draw do
-  root :to => "front/items#index"
+  root :to => "front/pages#show", :id => "home"
 
   namespace :front do
     resources :pages, :only => [:show]
