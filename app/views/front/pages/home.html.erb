@@ -1,0 +1,40 @@
+<% title "Home" %>
+
+<%= stylesheet_link_tag "/assets/vendor/vegas/jquery.vegas.min.css" %>
+<%= javascript_include_tag "/assets/vendor/vegas/jquery.vegas.min.js" %>
+
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+
+  $(function() {
+    // $.vegas({ src:'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg' });
+    // $.vegas('overlay', { src:'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg' });
+
+    $.vegas("slideshow", {
+        backgrounds: [
+          { src: '/assets/app/front/img/home_backgrounds/01.jpg' },
+          { src: '/assets/app/front/img/home_backgrounds/02.jpg' },
+          { src: '/assets/app/front/img/home_backgrounds/03.jpg' },
+          { src: '/assets/app/front/img/home_backgrounds/04.jpg' }
+        ],
+        fade: 500,
+        preload: true,
+        loading: false
+    });
+  });
+
+
+
+</script>
+
+<div id="home_box">
+  <h1>El Presente Perfecto</h1>
+  <div class="contact">
+    <a href="mailto:info@elpresenteperfecto.com">info@elpresenteperfecto.com</a>
+  </div>
+
+  <div class="coming_soon">
+    ~COMING SOON~
+  </div>
+</div>
